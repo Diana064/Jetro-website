@@ -1,0 +1,70 @@
+/*main__sidebar*/
+.sidebar 
+    width: 23%
+    margin: 5px 10px 0px 55px
+    @media screen and (max-width: 550px)
+        display: none
+    &__title
+        & h3
+            display: flex
+            font-size: 16px
+            color: rgb(237, 74, 9)
+            margin-bottom: 20px
+            &::after
+                content: ""
+                width: 140px
+                background-color: rgb(230, 226, 225)
+                height: 15px
+                margin-left: 20px
+                @media screen and (max-width: 1600px)
+                    width: 100px
+                    margin-left: 5px
+                @media screen and (max-width: 1500px)
+                    width: 50px
+                    font-size: 12px
+                @media screen and (max-width: 1025px)
+                    font-size: 11px
+        &:nth-child(5) h3::after  
+            width: 130px
+            @media screen and (max-width: 1600px)
+                width: 100px
+            @media screen and (max-width: 1500px)
+                width: 50px
+    &__content  
+        font-size: 15px
+        margin-bottom: 35px
+        flex-wrap: wrap
+        display: flex
+        @media screen and (max-width: 1500px)
+            font-size: 12px
+            width: 82%
+        &__list
+            margin-top: 0px
+            padding: 0px
+            font-size: 16px
+            @media screen and (max-width: 1500px)
+                font-size: 12px
+            & li, a 
+                list-style: none
+                text-decoration: none
+                color: black
+        &__gallery 
+            height: 130px
+            list-style: none
+            padding: 0px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            flex-direction: row
+            width: 270px
+            & li
+                background-color: rgb(232, 137, 100)
+                width: 60px
+                height: 60px
+                margin: 1px
+                border: 1px solid rgb(237, 74, 9)
+                @media screen and (max-width: 1300px)
+                    width: 45px
+                    height: 45px
+
+/*end__sidebar*/

@@ -1,0 +1,208 @@
+.main-items
+    display: flex
+    flex-direction: row
+    width: 73%
+    margin: 0px 0px 0 140px
+    @media screen and (max-width: 1600px)
+        margin: 0px 0px 0 130px
+    @media screen and (max-width: 1450px)
+        margin: 0px 0px 0 110px
+    @media screen and (max-width: 1350px)
+        margin: 0px 0px 0 100px
+    @media screen and (max-width: 1250px)
+        margin: 0px 0px 0 85px
+    @media screen and (max-width: 1200px)
+        margin: 0px 0px 0 75px
+    @media screen and (max-width: 1180px)
+        width: 100%
+        margin: 0 15px
+    &__content
+        display: flex
+        flex-direction: column
+        margin-top: 20px
+    &__post 
+        display: flex
+        flex-direction: row
+        margin-bottom: 50px
+        margin-top: 10px
+        width: 100%
+        @media screen and (max-width: 550px)
+            width: 70%
+            margin: 10px auto 50px
+        @media screen and (max-width: 350px)
+            width: 70%
+            margin: 10px 15px 50px 0
+    .pages
+            display: flex
+            flex-direction: row
+            width: 105px
+            height: 40px
+            margin: 0px 100px
+            margin-bottom: 45px
+            justify-content: space-between
+            & button
+                width: 30px
+                height: 30px
+                background-color: rgb(232, 137, 100)
+                color: white
+                &:nth-child(1)
+                    background-color: rgb(237, 74, 9)
+.post
+    &__icon 
+        display: flex
+        margin: 0px 15px 10px 0px
+        justify-content: flex-end
+        & img 
+            width: 85px
+            height: 85px
+            @media screen and (max-width: 800px)
+                display: none
+    &__block 
+        width: 100%
+        height: auto
+    .quote 
+        display: flex
+        flex-direction: row
+        width: 100%
+        background-color: rgb(230, 226, 225)
+        padding: 5px 5px
+        margin: 0px
+        .quoteIcon 
+            font-size: 100px
+            display: flex
+            padding: 0 15px 0 35px
+            height: 66px
+            color: rgb(237, 74, 9)
+        & p
+            padding: 25px 0px
+            @media screen and (max-width: 550px)
+                font-size: 9px
+
+    .sideIcon 
+        margin-top: 40px;
+    .postLine 
+        border-bottom: 15px solid rgb(235, 231, 231)
+        border-top: 15px solid rgb(235, 231, 231)
+        padding-top: 25px
+        padding-bottom: 50px
+        @media screen and (max-width: 550px)
+                font-size: 11px
+        .post__title 
+            padding: 0 0 5px
+            color: rgb(237, 74, 9)
+            @media screen and (max-width: 550px)
+                font-size: 12px
+        .post__url 
+            font-size: 12px
+            color: rgb(173, 173, 173)
+            padding-bottom: 20px 
+            @media screen and (max-width: 550px)
+                font-size: 9px
+    .post__media 
+        margin-bottom: 20px
+        width: 820px
+        @media screen and (max-width: 1600px)
+            width: 750px
+        @media screen and (max-width: 1400px)
+            width: 690px
+        @media screen and (max-width: 1400px)
+            width: 690px
+        @media screen and (max-width: 1320px)
+            width: 630px
+        @media screen and (max-width: 1200px)
+            width: 600px
+        @media screen and (max-width: 950px)
+            width: 550px
+        @media screen and (max-width: 901px)
+            width: 500px
+        @media screen and (max-width: 800px)
+            width: 450px
+        @media screen and (max-width: 680px)
+            width: 400px
+        @media screen and (max-width: 600px)
+            width: 350px
+        @media screen and (max-width: 600px)
+            width: 350px
+        @media screen and (max-width: 550px)
+            width: 250px
+        & img
+            width: 100%
+            height: 365px 
+            @media screen and (max-width: 901px)
+                height: 265px
+            @media screen and (max-width: 600px)
+                height: 200px
+            @media screen and (max-width: 550px)
+                height: 150px
+        iframe 
+            width: 100%
+            height: 500px   
+            @media screen and (max-width: 950px)
+                height: 400px
+            @media screen and (max-width: 901px)
+                height: 300px
+            @media screen and (max-width: 550px)
+                height: 250px
+            @media screen and (max-width: 400px)
+                height: 200px
+
+        .swiper-button-next, .swiper-button-prev
+            color: rgb(237, 74, 9)
+            font-size: 40px
+            font-weight: bolder
+    .post__meta-content 
+        display: flex
+        flex-direction: row
+        border-bottom: 15px solid rgb(235, 231, 231)
+        padding-bottom: 80px
+        margin-top: 25px
+        .post__meta 
+            width: 180px
+            margin: 0px 40px 0px 0px
+            @media screen and (max-width: 680px)
+                margin: 0px 20px 0px 0px
+            .meta 
+                & h3
+                    font-size: 16px
+                    color: rgb(237, 74, 9)
+                    margin-bottom: 10px
+                    @media screen and (max-width: 680px)
+                        font-size: 14px
+                    @media screen and (max-width: 600px)
+                        font-size: 12px
+                & p 
+                    font-size: 16px
+                    color: rgb(173, 173, 173)
+                    margin-bottom: 15px
+                    @media screen and (max-width: 680px)
+                        font-size: 13px
+                    @media screen and (max-width: 600px)
+                        font-size: 11px
+                    @media screen and (max-width: 550px)
+                        font-size: 9px
+        .post__content 
+            width: 100%
+            & h2
+                font-size: 20px
+                color: rgb(237, 74, 9)
+                margin-top: 0px
+                margin-bottom: 5px
+                @media screen and (max-width: 680px)
+                    font-size: 16px
+                @media screen and (max-width: 600px)
+                    font-size: 12px
+            & p
+                @media screen and (max-width: 850px)
+                    font-size: 12px
+                @media screen and (max-width: 680px)
+                        font-size: 11px
+                @media screen and (max-width: 600px)
+                        font-size: 9px
+                @media screen and (max-width: 550px)
+                    font-size: 7px
+    
+        
+                    
+
+
+

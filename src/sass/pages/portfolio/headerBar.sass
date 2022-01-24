@@ -1,0 +1,30 @@
+.main__portfolio
+    width: 69%
+    margin: 20px 245px
+    @media screen and (max-width: 1100px)
+        width: 55%
+        margin: 20px auto
+    @media screen and (max-width: 820px)
+        width: 100%
+        margin: 20px 10px
+    .main__bar 
+        font-size: 18px
+        display: flex
+        flex-direction: row
+        margin: 45px 5px
+        align-items: center
+        @media screen and (max-width: 940px)
+            font-size: 12px
+        @media screen and (max-width: 420px)
+             font-size: 9px
+             margin: 30px 5px
+        & a 
+            margin: 0px 10px 0px 0px
+            color: grey
+            border: none
+        &:nth-child(1)
+            margin-left: 0px     
+        & .is-used 
+            background-color: rgb(237, 74, 9)
+            color: white
+            padding: 8px 13px

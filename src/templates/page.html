@@ -1,0 +1,34 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{# variable example #}	
+
+
+	
+	{# partial example #}
+	{% include "partials/home/_header__main.html" %}
+	{% include "./partials/home/title__main.html" %}
+	{% include "./partials/home/main__information.html" %}
+	{% include "./partials/home/item.html" %}
+	
+	
+
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		{% endfor %}
+	{# end of example #}
+{% include "partials/_footer.html" %}
+
+{% endblock %}
+
+
+
+

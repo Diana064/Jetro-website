@@ -1,0 +1,15 @@
+ProjectTitle: jetro
+
+PageList:
+- file: page.html
+  ready: 50
+- file: aboutUs.html
+  ready: 50
+- file: blog.html
+  ready: 50
+- file: portfolio.html
+  ready: 50
+- file: portfolioItem.html
+  ready: 50
+- file: contactUs.html
+  ready: 50

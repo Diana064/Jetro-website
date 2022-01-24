@@ -1,0 +1,73 @@
+.portfolio
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+    grid-gap: 32px
+    grid-auto-flow: dense
+    @media screen and (max-width: 1210px)
+        margin: 20px 100px
+    @media screen and (max-width: 940px)
+        margin: 20px 50px
+    &__work 
+        width: 73%
+        height: 300px
+        display: flex
+        flex-direction: column
+        @media screen and (max-width: 1100px)
+            align-items: center
+        @media screen and (max-width: 420px)
+            align-items: normal
+    &__image
+        display: inline-block
+        position: relative
+        line-height: 0
+        &:hover:after 
+            content: ""
+            display: block
+            width: 264px
+            height: 100% 
+            position: absolute
+            top: 0
+            left: 0
+            background: transparent
+            background-color: black
+            opacity: 0.6
+            @media screen and (max-width: 420px)
+                width: 210px
+        &:hover:before 
+            content: ""
+            display: inline-block
+            width: 52px
+            height: 52px
+            margin: -26px 0 0 -26px
+            position: absolute
+            top: 50%
+            left: 132.5px
+            background: url(https://snipp.ru/img/plus.png) 0 0 no-repeat
+            z-index: 100
+            @media screen and (max-width: 420px)
+                left: 60px   
+        & img 
+            width: 265px
+            height: 220px
+            object-fit: cover
+        @media screen and (max-width: 420px)
+            width: 210px
+            height: 190px
+    &__text 
+        border: 2px solid rgb(230, 226, 225)
+        border-top: none
+        padding: 15px
+        width: 265px
+        position: relative
+        text-transform: uppercase
+        font-weight: bold
+        @media screen and (max-width: 420px)
+            width: 210px
+        & p 
+            margin-top: 0px
+            margin-bottom: 0px
+            color: grey
+            font-size: 21px
+        & span 
+            color: rgb(237, 74, 9)
+            font-size: 12px
